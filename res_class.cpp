@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Student{
+class Student{  //base class for student
     protected:
     int rNo;
     string name;
@@ -12,7 +12,7 @@ class Student{
         name = n;
     }
 };
-class Sports{
+class Sports{   //base class for sports
     protected:
     int score;
 
@@ -22,7 +22,7 @@ class Sports{
     }
 };
 
-class Test:public Student{
+class Test:public Student{  //derived class for test
     protected:
     int m1, m2;
 
@@ -32,7 +32,7 @@ class Test:public Student{
         m2 = mr2;
     }
 };
-class Result:public Test, public Sports{
+class Result:public Test, public Sports{    //derived class for result
     int avg;
     public:
 
